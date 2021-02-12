@@ -20,63 +20,107 @@
   </head>
   <body class="page">
     <!-- Шапка -->
-    <header class="header">
-      <div class="container header-nav">
-        <nav class="nav">
+    <header class="page-header">
+      <div class="container header ">
+
           <a href="./index.html" class="logo">
             Web<span class="dark">Studio</span>
           </a>
 
-          <ul class="list site-nav">
-            <li class="item">
-              <a href="./index.html" class="link current">Студия</a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
-            </li>
-            <li class="item">
-              <a href="#" class="link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+          <button  type="button"
+           class="button menu-button" aria-expanded="false" data-menu-button>
+            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+              
+              <use class="menu-off" href="./img/sprite.svg#menu-off"></use>
+              <use class="menu-open" href="./img/sprite.svg#menu-open"></use>
+              
+            </svg>
+          </button>
 
+          <div class="nav-menu" data-menu>
+            <nav class="nav">
+              <ul class="list site-nav">
+                <li class="item">
+                  <a href="./index.html" class="link current">Студия</a>
+                </li>
+                <li class="item">
+                  <a href="./portfolio.html" class="link">Портфолио</a>
+                </li>
+                <li class="item">
+                  <a href="#" class="link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
 
-        
-        <ul class="list contacts-header">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link nav-icon"> 
-              <div class="mail-icon">
-                <svg width="16px" height="12px">
-                  <use href="./img/sprite.svg#icon-mail"></use>
-                </svg> 
-              </div> 
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="item"> 
-            <a href="tel:+380961111111" class="link nav-icon">
-              <div class="tel-icon">
-                <svg width="10px" height="16px">
-                  <use href="./img/sprite.svg#icon-phone"></use>
-                </svg>
-              </div>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+            <div class="mobile-contacts">
+              <ul class="list contacts-header">
+                <li class="item">
+                  <a href="tel:+380961111111" class="link">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="mailto:info@devstudio.com" class="link">
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="list social-network">
+                <li>
+                  <a href="#">Instagram</a>
+                </li>
+                <li>
+                  <a href="#">Twitter</a>
+                </li>
+                <li>
+                  <a href="#">Facebook</a>
+                </li>
+                <li>
+                  <a href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contacts">
+              <ul class="list contacts-header">
+                <li class="item">
+                  <a href="mailto:info@devstudio.com" class="link nav-icon"> 
+                    <div class="mail-icon">
+                      <svg width="16px" height="12px">
+                        <use href="./img/sprite.svg#icon-mail"></use>
+                      </svg> 
+                    </div> 
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="item"> 
+                  <a href="tel:+380961111111" class="link nav-icon">
+                    <div class="tel-icon">
+                      <svg width="10px" height="16px">
+                        <use href="./img/sprite.svg#icon-phone"></use>
+                      </svg>
+                    </div>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+
+              
+            </div>
+            
+          </div>
       </div>
     </header>
     <main>
       <!-- Главный баннер -->
       <section class="caption">
-        <div class="container caption-hero">
+        <div class="caption-hero">
           <h1 class="caption-text">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button caption-button" data-modal-open>Заказать услугу</button>
         </div>
-        
       </section>
       <!-- Чем мы занимаемся/о нас -->
-      <section class="about wrap">
+      <!-- <section class="about wrap">
         <div class="container">
           <h2 class="visually-hidden">О нас (скрытый заголовок)</h2>
           <ul class="list about-list">
@@ -174,9 +218,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Наша команда -->
-      <section class="team wrap">
+      <!-- <section class="team wrap">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="list">
@@ -355,9 +399,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Постоянные клиенты -->
-      <section class="clients wrap">
+      <!-- <section class="clients wrap">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
           <ul class="list clients-logo">
@@ -406,9 +450,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
     <!-- Подвал -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-wrap">
         <div class="footer-link">
           <a href="./index.html" class="logo">
@@ -477,9 +521,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- модальное окно -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button icon-off" type="button" data-modal-close>
           <svg width="11px" height="11px">
@@ -534,7 +578,8 @@
 
         </form>
       </div>
-    </div>
+    </div> -->
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

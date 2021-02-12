@@ -1,0 +1,37 @@
+.nav-menu {
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  min-height: 796px;
+
+  background-color: $pageColor;
+  padding: 48px 40px;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.site-nav {
+  .item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: $mainTextColor;
+    &.current,
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+}
