@@ -1,0 +1,24 @@
+@import './utils/variables';
+
+@import './base/normalize';
+@import './base/base-styles';
+
+@import './components/logo';
+@import './components/navigation';
+@import './components/contacts';
+@import './components/buttons';
+@import './components/icon';
+@import './components/form';
+@import './components/modal';
+@import './components/checkbox';
+@import './components/cards';
+
+@import './layout/header';
+@import './layout/pages';
+@import './layout/footer';
+@import './layout/caption';
+@import './layout/about';
+@import './layout/job';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/portfolio';

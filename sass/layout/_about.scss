@@ -1,0 +1,24 @@
+.about-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.about-item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.about-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-text {
+  line-height: 1.71;
+
+  color: $secondaryTextColor;
+}

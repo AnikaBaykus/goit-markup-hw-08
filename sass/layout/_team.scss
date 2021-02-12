@@ -1,0 +1,12 @@
+.team {
+  background-color: $pageSecondaryColor;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}

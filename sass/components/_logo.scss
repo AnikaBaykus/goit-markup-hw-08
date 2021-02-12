@@ -1,0 +1,15 @@
+.logo {
+  font-family: $logoFont;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  color: $accentColor;
+
+  .dark {
+    color: $accentSecondaryColor;
+  }
+  .light {
+    color: $pageColor;
+  }
+}
