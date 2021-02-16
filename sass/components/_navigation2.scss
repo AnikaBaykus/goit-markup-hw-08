@@ -6,13 +6,15 @@
   left: 0;
   width: 100%;
 
-  min-height: 796px;
+  height: 796px;
 
   background-color: $pageColor;
   padding: 48px 40px;
 
   &.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
