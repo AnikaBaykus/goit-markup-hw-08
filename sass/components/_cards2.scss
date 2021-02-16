@@ -1,0 +1,50 @@
+// cardsTeam
+.team-window {
+  width: 450px;
+
+  background-color: $pageColor;
+  box-shadow: $shadowModal;
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.team-item {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+.team-photo {
+  display: flex;
+}
+
+.team-name {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-profession {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: $secondaryTextColor;
+}
+
+.icons-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 206px;
+  height: 44px;
+}
+
+// cardsTeam

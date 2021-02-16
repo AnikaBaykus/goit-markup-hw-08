@@ -1,3 +1,4 @@
+// contactsHeader
 .contacts-in-menu {
   margin-bottom: 64px;
   .item:not(:last-child) {
@@ -25,6 +26,7 @@
 
 .social-network {
   display: flex;
+  flex-wrap: wrap;
 
   .social-link:not(:last-child) {
     border-right: 1px solid $borderModalInput;
@@ -44,4 +46,40 @@
 
 .contacts {
   display: none;
+}
+
+// contactsHeader
+// contactsFooter
+.map {
+  margin-bottom: 8px;
+
+  .link {
+    font-style: normal;
+    line-height: 1.71;
+
+    color: $pageColor;
+  }
+}
+
+.contacts-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .link {
+    line-height: 1.71;
+    color: $contactsTextColor;
+    transition: color $smoothTransition;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+  .item:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }

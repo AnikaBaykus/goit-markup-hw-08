@@ -1,0 +1,21 @@
+.about-item {
+  max-width: 450px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.about-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-text {
+  line-height: 1.71;
+
+  color: $secondaryTextColor;
+}
