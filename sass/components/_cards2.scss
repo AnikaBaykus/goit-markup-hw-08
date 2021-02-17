@@ -48,3 +48,90 @@
 }
 
 // cardsTeam
+// cardsPortfolio
+
+.product .link {
+  text-decoration: none;
+  color: $mainTextColor;
+}
+
+.product-window {
+  display: flex;
+  margin: 15px;
+  width: 450px;
+
+  background-color: $pageColor;
+  outline-color: $borderColor;
+  outline-width: 1px;
+  outline-style: solid;
+}
+
+.product-window .link {
+  transition: box-shadow $smoothTransition;
+
+  &:hover,
+  &:focus {
+    box-shadow: $shadowCard;
+  }
+
+  &:hover .product-info,
+  &:focus .product-info {
+    transform: translateY(-100%);
+  }
+}
+
+.product-box {
+  position: relative;
+
+  width: 450px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.product-info {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: $pageColor;
+  background-color: $decorCardColor;
+  transition: transform $smoothTransition;
+  transform: translateY(0);
+}
+
+.product-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.product-item {
+  padding: 20px 24px;
+  max-width: 450px;
+}
+
+.product-text {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.product-work {
+  font-size: 16px;
+  line-height: 1.87;
+
+  color: $secondaryTextColor;
+}
+// cardsPortfolio

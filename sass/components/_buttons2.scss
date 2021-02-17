@@ -1,5 +1,5 @@
-.menu-button {
-  z-index: 2;
+.menu-btn {
+  z-index: 3;
   .menu-off {
     display: none;
   }
@@ -63,3 +63,31 @@
 }
 
 // footerButton
+// portfolioButtons
+
+.product .button {
+  display: block;
+  padding: 6px 22px;
+  min-width: 73px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  color: $mainTextColor;
+  background-color: $pageSecondaryColor;
+  border-color: $pageSecondaryColor;
+  cursor: pointer;
+  transition: color $smoothTransition, background-color $smoothTransition,
+    border-color $smoothTransition, box-shadow $smoothTransition;
+
+  &:hover,
+  &:focus {
+    color: $pageColor;
+    background-color: $accentColor;
+    border-color: $accentColor;
+    box-shadow: $shadowButtonMenu;
+  }
+}
+
+// portfolioButtons
