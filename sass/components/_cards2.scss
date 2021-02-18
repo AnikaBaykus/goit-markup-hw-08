@@ -1,9 +1,7 @@
 // cardsTeam
 
 .team-list {
-  @media screen and (min-width: $mobile) {
-    margin-bottom: -30px;
-  }
+  margin-bottom: -30px;
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -13,14 +11,13 @@
 }
 
 .team-window {
+  margin-bottom: 30px;
+
+  max-width: 450px;
+
   background-color: $pageColor;
   box-shadow: $shadowModal;
   border-radius: 0px 0px 4px 4px;
-
-  @media screen and (min-width: $mobile) {
-    max-height: 450px;
-    margin-bottom: 30px;
-  }
 
   @media screen and (min-width: $tablet) {
     width: 354px;

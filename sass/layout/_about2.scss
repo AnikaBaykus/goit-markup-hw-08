@@ -1,5 +1,5 @@
 .about-list {
-  margin: -30px;
+  margin-bottom: -30px;
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -8,10 +8,9 @@
 }
 
 .about-item {
-  @media screen and (min-width: $mobile) {
-    max-width: 450px;
-    margin: 30px;
-  }
+  max-width: 450px;
+
+  margin-bottom: 30px;
 
   @media screen and (min-width: $tablet) {
     width: 354px;
