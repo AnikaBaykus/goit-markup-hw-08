@@ -6,24 +6,24 @@
   background-color: $pageColor;
   border-bottom: 1px solid $bottomBorderColor;
 
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
-  }
-
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-    min-height: 80px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
-  }
-
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+
+    @media screen and (min-width: $mobile) {
+      width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: $tablet;
+      min-height: 80px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: $desktop;
+    }
 
     .logo {
       padding: 16px 0;

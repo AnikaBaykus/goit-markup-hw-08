@@ -130,4 +130,7 @@
   .item:not(:last-child) {
     margin-bottom: 8px;
   }
+  @media screen and (min-width: $desktop) {
+    align-items: flex-start;
+  }
 }
