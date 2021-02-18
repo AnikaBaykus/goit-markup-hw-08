@@ -19,6 +19,9 @@
   margin: 0 auto;
   text-align: center;
   max-width: 360px;
+  @media screen and (min-width: $desktop) {
+    max-width: 696px;
+  }
 }
 
 .caption-text {
@@ -32,4 +35,9 @@
   text-align: center;
 
   color: $pageColor;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

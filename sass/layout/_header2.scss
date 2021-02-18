@@ -1,18 +1,37 @@
 .page-header {
   position: relative;
   min-height: 60px;
+  margin: 0 auto;
 
   background-color: $pageColor;
   border-bottom: 1px solid $bottomBorderColor;
-}
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
 
-  .logo {
-    padding: 16px 0;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    min-height: 80px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .logo {
+      padding: 16px 0;
+
+      @media screen and (min-width: $tablet) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+      }
+    }
   }
 }

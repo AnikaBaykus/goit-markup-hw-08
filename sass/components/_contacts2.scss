@@ -44,10 +44,58 @@
   }
 }
 
-.contacts {
-  display: none;
+.contacts-mobile {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
+.contacts {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .contacts-header {
+    .item + .item {
+      margin-top: 10px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+
+      .item + .item {
+        margin-top: 0;
+        margin-left: 50px;
+      }
+    }
+  }
+}
+
+.contacts-header .link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: $secondaryTextColor;
+  transition: color $smoothTransition;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 // contactsHeader
 // contactsFooter
 .map {

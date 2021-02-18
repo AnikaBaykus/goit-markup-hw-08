@@ -2,14 +2,25 @@
   padding: 0 15px;
   margin: 0 auto;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
 }
 
 .wrap {
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .title {
@@ -19,4 +30,13 @@
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.wrap-second {
+  padding-bottom: 94px;
 }

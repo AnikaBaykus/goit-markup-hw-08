@@ -24,6 +24,10 @@
       fill: $accentColor;
     }
   }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 // captionButton
 .caption-button {

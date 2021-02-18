@@ -1,3 +1,35 @@
+// iconHeader
+.nav-icon {
+  display: flex;
+  align-items: center;
+
+  fill: currentColor;
+}
+
+.mail-icon svg {
+  width: 14px;
+  height: 10px;
+
+  @media screen and (min-width: $desktop) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.tel-icon svg {
+  width: 10px;
+  height: 14px;
+  @media screen and (min-width: $desktop) {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.mail-icon,
+.tel-icon {
+  padding-right: 8px;
+}
+// iconHeader
 // iconAbout
 .about-icons {
   margin-bottom: 30px;
