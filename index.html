@@ -192,6 +192,7 @@
                   alt="изображение Макинтоша"
                   width="370"
                   height="294"
+                  loading="lazy"
                 />
               </picture>
               <div class="job-info">
@@ -214,6 +215,7 @@
                   alt="изображения Макбука и Айфона"
                   width="370"
                   height="294"
+                  loading="lazy"
                 />
               </picture>
               
@@ -237,6 +239,7 @@
                   alt="изображение Айпада"
                   width="370"
                   height="294"
+                  loading="lazy"
                 />
               </picture>
               <div class="job-info">
@@ -252,12 +255,26 @@
           <h2 class="title">Наша команда</h2>
             <ul class="list team-list">
               <li class="team-window">
-                <img
-                  class="team-photo"
-                  src="./img/img-igor.jpg1"
-                  alt="Фото Игоря Демьяненко"
-                  
-                />
+                <picture>
+                  <source media="(min-width: 1200px)" 
+                  srcset=" 
+                  ./img/desktop/foto/img-pd@1x.jpg 1x,
+                  ./img/desktop/foto/img-pd@2x.jpg 2x">
+                  <source media="(min-width: 768px)" 
+                  srcset=" 
+                  ./img/tablet/foto/img-pd@1x.jpg 1x,
+                  ./img/tablet/foto/img-pd@2x.jpg 2x">
+                  <source media="(min-width: 480px)" 
+                  srcset="              
+                  ./img/mobile/foto/img-pd@1x.jpg 1x,
+                  ./img/mobile/foto/img-pd@2x.jpg 2x">
+                  <img class="team-photo" src="./img/mobile/foto/img-pd@1x.jpg" 
+                  srcset=" 
+                  ./img/mobile/foto/img-pd@1x.jpg 1x,
+                  ./img/mobile/foto/img-pd@1x.jpg 2x" 
+                  alt="Фото Игоря Демьяненко" loading="lazy" />
+                </picture>
+                
                 <div class="team-item">
                   <h3 class="team-name">Игорь Демьяненко</h3>
                   <p class="team-profession">Product Designer</p>
@@ -296,12 +313,28 @@
               </li>
 
               <li class="team-window">
+                <picture>
+                  <source media="(min-width: 1200px)" 
+                  srcset=" 
+                  ./img/desktop/foto/img-fd@1x.jpg 1x,
+                  ./img/desktop/foto/img-fd@2x.jpg 2x">
+                  <source media="(min-width: 768px)" 
+                  srcset=" ./img/tablet/foto/img-fd@1x.jpg 1x,
+                  ./img/tablet/foto/img-fd@2x.jpg 2x">
+                  <source media="(min-width: 480px)"
+                  srcset=" 
+                  ./img/mobile/foto/img-fd@1x.jpg 1x,
+                  ./img/mobile/foto/img-fd@2x.jpg 2x">
                 <img
                   class="team-photo"
-                  src="./img/img-olga.jpg1"
+                  src="./img/mobile/foto/img-fd@1x.jpg"
+                  srcset=" 
+                  ./img/mobile/foto/img-fd@1x.jpg 1x,
+                 ./img/mobile/foto/img-fd@2x.jpg1 2x"
                   alt="Фото Ольги Репиной"
-                    
+                  loading="lazy"
                 />
+                </picture>
                 <div class="team-item">
                   <h3 class="team-name">Ольга Репина</h3>
                   <p class="team-profession">Frontend Developer</p>
@@ -338,12 +371,29 @@
                 </div>
               </li>
               <li class="team-window">
+                <picture>
+                  <source media="(min-width: 1200px)" 
+                  srcset=" 
+                  ./img/desktop/foto/img-m@1x.jpg 1x,
+                  ./img/desktop/foto/img-m@2x.jpg 2x">
+                  <source media="(min-width: 768px)" 
+                  srcset=" 
+                  ./img/tablet/foto/img-m@1x.jpg 1x,
+                  ./img/tablet/foto/img-m@2x.jpg 2x">
+                  <source media="(min-width: 480px)" 
+                  srcset=" 
+                  ./img/mobile/foto/img-m@1x.jpg 1x,
+                  ./img/mobile/foto/img-m@2x.jpg 2x">
                 <img
                   class="team-photo"
-                  src="./img/img-nikolaj.jpg1"
+                  src="./img/mobile/foto/img-m@1x.jpg"
+                  srcset=" 
+                  ./img/mobile/foto/img-m@1x.jpg 1x,
+                  ./img/mobile/foto/img-m@2x.jpg 2x"
                   alt="Фото Николая Тарасова"
-                  
+                  loading="lazy"
                 />
+                </picture>
                 <div class="team-item">
                   <h3 class="team-name">Николай Тарасов</h3>
                   <p class="team-profession">Marketing</p>
@@ -380,12 +430,29 @@
                 </div>
               </li>
               <li class="team-window">
+                <picture>
+                  <source media="(min-width: 1200px)" 
+                  srcset=" 
+                  ./img/desktop/foto/img-ud@1x.jpg 1x,
+                  ./img/desktop/foto/img-ud@2x.jpg 2x">
+                  <source media="(min-width: 768px)" 
+                  srcset=" 
+                  ./img/tablet/foto/img-ud@1x.jpg 1x,
+                  ./img/tablet/foto/img-ud@2x.jpg 2x">
+                  <source media="(min-width: 480px)"
+                  srcset=" 
+                  ./img/mobile/foto/img-ud@1x.jpg 1x,
+                  ./img/mobile/foto/img-ud@2x.jpg 2x">
                 <img
                   class="team-photo"
-                  src="./img/img-michael.jpg1"
+                  src="./img/mobile/foto/img-ud@1x.jpg"
+                   srcset="
+                   ./img/mobile/foto/img-ud@1x.jpg 1x,
+                   ./img/mobile/foto/img-ud@2x.jpg 2x"
                   alt="Фото Михаила Ермакова"
-                  
+                  loading="lazy"
                 />
+                </picture>
                 <div class="team-item">
                   <h3 class="team-name">Михаил Ермаков</h3>
                   <p class="team-profession">UI Designer</p>

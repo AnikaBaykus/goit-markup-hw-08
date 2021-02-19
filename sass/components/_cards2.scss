@@ -34,7 +34,9 @@
 }
 
 .team-photo {
-  display: flex;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .team-name {
@@ -131,13 +133,17 @@
   padding-left: 24px;
   padding-right: 24px;
 
-  font-size: 18px;
-  line-height: 1.56;
+  font-size: 14px;
+  line-height: 1.36;
 
   color: $pageColor;
   background-color: $decorCardColor;
   transition: transform $smoothTransition;
   transform: translateY(0);
+  @media screen and (min-width: $mobile) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
 
 .product-image {
