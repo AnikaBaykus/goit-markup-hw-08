@@ -81,6 +81,13 @@
   outline-color: $borderColor;
   outline-width: 1px;
   outline-style: solid;
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+  }
 }
 
 .product-window .link {
@@ -100,9 +107,16 @@
 .product-box {
   position: relative;
 
-  width: 450px;
-  height: 294px;
+  max-width: 100%;
+  height: auto;
   overflow: hidden;
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+  }
 }
 
 .product-info {

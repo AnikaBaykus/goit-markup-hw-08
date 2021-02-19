@@ -20,13 +20,19 @@
   top: 50%;
   transform: translate(-50%, -50%);
 
-  width: 450px;
-  height: 609px;
   padding: 40px;
 
   background-color: $pageColor;
   box-shadow: $shadowModal;
   border-radius: 4px;
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-title {
