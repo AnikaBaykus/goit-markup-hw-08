@@ -19,7 +19,7 @@
     screen and (min-resolution: 2dppx) {
     .caption {
       background-image: $Gradient,
-        url('../../../img/mobile/hero/header-img@2x.jpg');
+        url('../../img/mobile/hero/header-img@2x.jpg');
     }
   }
 }
@@ -27,8 +27,7 @@
 @media screen and (min-width: $mobile) {
   .caption {
     max-width: $tablet;
-    background-image: $Gradient,
-      url('../../../img/tablet/hero/header-img@1x.jpg');
+    background-image: $Gradient, url('../../img/tablet/hero/header-img@1x.jpg');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -38,15 +37,14 @@
     screen and (min-resolution: 2dppx) {
     .caption {
       background-image: $Gradient,
-        url('../../../img/tablet/hero/header-img@2x.jpg');
+        url('../../img/tablet/hero/header-img@2x.jpg');
     }
   }
 
   @media screen and (min-width: $tablet) {
     .caption {
       max-width: $desktop;
-      background-image: $Gradient,
-        url('../../../img/desktop/hero/hero-img@1x.jpg');
+      background-image: $Gradient, url('../../img/desktop/hero/hero-img@1x.jpg');
     }
 
     @media screen and (min-device-pixel-ratio: 2),
