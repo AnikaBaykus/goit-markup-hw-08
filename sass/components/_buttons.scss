@@ -1,19 +1,48 @@
-// captionButton
+.menu-btn {
+  z-index: 3;
+  .menu-off {
+    display: none;
+  }
 
-.caption .button {
+  &.is-open .menu-off {
+    display: block;
+  }
+
+  &.is-open .menu-open {
+    display: none;
+  }
+
+  svg {
+    width: 40px;
+    height: 40px;
+
+    fill: $accentSecondaryColor;
+    transition: fill $smoothTransition;
+
+    &:hover,
+    &:focus {
+      fill: $accentColor;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+// captionButton
+.caption-button {
   padding: 10px 32px;
   min-width: 200px;
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
   letter-spacing: 0.06em;
 
   color: $pageColor;
   background-color: $accentColor;
   border-color: $accentColor;
   box-shadow: $shadowColor;
-  cursor: pointer;
 }
 // captionButton
 // footerButton
@@ -21,7 +50,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 200px;
+  width: 200px;
+  height: 50px;
 
   font-weight: 700;
   font-size: 16px;

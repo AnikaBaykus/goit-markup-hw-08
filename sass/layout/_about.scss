@@ -1,12 +1,23 @@
 .about-list {
-  display: flex;
-  flex-wrap: nowrap;
+  margin-bottom: -30px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
-.about-item {
-  width: 270px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+.about-item {
+  max-width: 450px;
+
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+    margin: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
   }
 }
 
@@ -14,7 +25,11 @@
   margin-bottom: 10px;
 
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
 }
 
 .about-text {
