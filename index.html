@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="apple-touch-icon" href="/example.png">
   </head>
   <body class="page">
     <!-- Шапка -->
@@ -26,7 +27,7 @@
             Web<span class="dark">Studio</span>
           </a>
           
-          <button type="button" class="button menu-btn" aria-expanded="false" data-menu-button>
+          <button type="button" class="button menu-btn" aria-label="Кнопка мобильного меню" aria-expanded="false" data-menu-button>
             <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
               <use class="menu-off" href="./img/sprite.svg#menu-off"></use>
               <use class="menu-open" href="./img/sprite.svg#menu-open"></use>
@@ -112,7 +113,7 @@
       <section class="caption">
         <div class="caption-hero">
           <h1 class="caption-text">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button caption-button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button caption-button" aria-label="Кнопка для заказа услуги" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Чем мы занимаемся/о нас -->
@@ -275,7 +276,10 @@
                   srcset=" 
                   ./img/mobile/foto/img-pd@1x.jpg 1x,
                   ./img/mobile/foto/img-pd@1x.jpg 2x" 
-                  alt="Фото Игоря Демьяненко" loading="lazy" />
+                  alt="Фото Игоря Демьяненко" 
+                  width="450px"
+                  height="460px"
+                  loading="lazy" />
                 </picture>
                 
                 <div class="team-item">
@@ -336,6 +340,8 @@
                   ./img/mobile/foto/img-fd@1x.jpg 1x,
                  ./img/mobile/foto/img-fd@2x.jpg 2x"
                   alt="Фото Ольги Репиной"
+                  width="450px"
+                  height="460px"
                   loading="lazy"
                 />
                 </picture>
@@ -395,6 +401,8 @@
                   ./img/mobile/foto/img-m@1x.jpg 1x,
                   ./img/mobile/foto/img-m@2x.jpg 2x"
                   alt="Фото Николая Тарасова"
+                  width="450px"
+                  height="460px"
                   loading="lazy"
                 />
                 </picture>
@@ -454,6 +462,8 @@
                    ./img/mobile/foto/img-ud@1x.jpg 1x,
                    ./img/mobile/foto/img-ud@2x.jpg 2x"
                   alt="Фото Михаила Ермакова"
+                  width="450px"
+                  height="460px"
                   loading="lazy"
                 />
                 </picture>
@@ -607,8 +617,10 @@
         <div class="footer-form">
           <h2 class="text-footer">подпишитесь на рассылку</h2>
           <form class="form-in-footer" autocomplete="off">
-              <input class="input-footer" type="email" name="email-user" placeholder="E-mail" />
-              <button class="button btn-footer" type="submit">Подписаться
+            <label for="email">
+              <input class="input-footer" type="email" id="email" name="email-user" id="email" placeholder="E-mail" />
+              </label>
+              <button class="button btn-footer" aria-label="Кнопка подписки на Телеграмм канал" type="submit">Подписаться
                 <span class="btn-icon-footer">
                   <svg width="24px" height="24px">
                     <use href="./img/sprite.svg#icon-telegram"></use>
@@ -622,7 +634,7 @@
     <!-- модальное окно -->
     <div class="backdrop is-hidden " data-modal>
       <div class="modal">
-        <button class="button icon-off" type="button" data-modal-close>
+        <button class="button icon-off" aria-label="Кнопка закрыть окно" type="button" data-modal-close>
           <svg width="11px" height="11px">
             <use href="./img/sprite.svg#icon-off"></use>
           </svg>
@@ -671,7 +683,7 @@
           <label class="modal-terms" for="modal-checkbox">Соглашаюсь с рассылкой и принимаю
           <a href="#">Условия договора</a></label>
           
-          <button class="button btn-in-modal" type="submit">Отправить</button>
+          <button class="button btn-in-modal" aria-label="Кнопка для отправки данных формы" type="submit">Отправить</button>
 
         </form>
       </div>
@@ -680,6 +692,8 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+
 
 
 

@@ -60,6 +60,7 @@
   background-color: $pageColor;
   fill: $accentSecondaryColor;
   transition: fill $smoothTransition;
+  cursor: pointer;
 
   &:hover,
   &:focus {

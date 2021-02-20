@@ -4,7 +4,7 @@
   padding: 118px 0px;
 
   max-width: 480px;
-  height: auto;
+  height: 400px;
 
   background-color: $captionColor;
   background-image: $Gradient, url('../img/mobile/hero/header-img@1x.jpg');
@@ -42,7 +42,6 @@
   @media screen and (min-width: $tablet) {
     .caption {
       max-width: 1600px;
-      height: 600px;
       background-image: $Gradient, url('../img/desktop/hero/hero-img@1x.jpg');
     }
 
@@ -54,6 +53,13 @@
       .caption {
         background-image: $Gradient, url('../img/desktop/hero/hero-img@2x.jpg');
       }
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    .caption {
+      height: 600px;
+      padding: 200px 0px;
     }
   }
 }

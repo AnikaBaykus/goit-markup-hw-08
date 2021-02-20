@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="apple-touch-icon" href="/example.png">
   </head>
   <body class="page">
     <!-- Шапка -->
@@ -111,19 +112,19 @@
           <h1 class="visually-hidden">Портфолио (скрытый заголовок)</h1>
           <ul class="list product-menu">
             <li class="menu-button">
-              <button type="button" class="button">Все</button>
+              <button type="button" class="button" aria-label="Фильтр">Все</button>
             </li>
             <li class="menu-button">
-              <button type="button" class="button">Веб-сайты</button>
+              <button type="button" class="button" aria-label="Фильтр">Веб-сайты</button>
             </li>
             <li class="menu-button">
-              <button type="button" class="button">Приложения</button>
+              <button type="button" class="button" aria-label="Фильтр">Приложения</button>
             </li>
             <li class="menu-button">
-              <button type="button" class="button">Дизайн</button>
+              <button type="button" class="button" aria-label="Фильтр">Дизайн</button>
             </li>
             <li class="menu-button">
-              <button type="button" class="button">Маркетинг</button>
+              <button type="button" class="button" aria-label="Фильтр">Маркетинг</button>
             </li>
           </ul>
           <ul class="list product-items">
@@ -511,8 +512,10 @@
       <div class="footer-form">
         <h2 class="text-footer">подпишитесь на рассылку</h2>
         <form class="form-in-footer" autocomplete="off">
-          <input class="input-footer" type="email" name="email-user" placeholder="E-mail" />
-          <button class="button btn-footer" type="submit">Подписаться
+          <label for="email">
+            <input class="input-footer" type="email"  name="email-user" id="email" placeholder="E-mail" />
+          </label>
+          <button class="button btn-footer" aria-label="Кнопка подписки на Телеграмм канал" type="submit">Подписаться
             <span class="btn-icon-footer">
               <svg width="24px" height="24px">
                 <use href="./img/sprite.svg#icon-telegram"></use>
@@ -526,4 +529,5 @@
   <script src="./js/menu.js"></script>
   </body>
 </html>
+
 
