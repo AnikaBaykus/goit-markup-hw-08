@@ -41,7 +41,8 @@
 
   @media screen and (min-width: $tablet) {
     .caption {
-      max-width: $desktop;
+      max-width: 1600px;
+      height: 600px;
       background-image: $Gradient, url('../img/desktop/hero/hero-img@1x.jpg');
     }
 
